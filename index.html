@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clive | WDD 231 Course Home Page</title>
+    <meta name="description" content="Course home page for clive, featuring responsive design and dynamic course filtering.">
+    <meta name="author" content="Cive">
+    
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+
+ 
+    <script src="scripts/getdates.js" defer></script>
+
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+   <header>
+    <img src="images/person.svg" alt="Logo" width="50">
+    <span>Clive</span>
+    
+    <button id="menu"></button> 
+</header>
+
+<nav>
+   
+    <ul class="navigation" id="animatenav">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Final</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <h2>Course Work</h2>
+            <div id="course-list"></div>
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <p>Total Credits: <span id="total-credits"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/simbaclive">GitHub</a>
+            <a href="https://www.linkedin.com/in/clive-musika-203a121a0/">LinkedIn</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Clive | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
