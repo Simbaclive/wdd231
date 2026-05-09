@@ -1,0 +1,162 @@
+
+
+body {
+    background: linear-gradient(135deg, #001d3d 0%, #003566 100%);
+    background-attachment: fixed;
+    color: white;
+    min-height: 100vh;
+
+}
+
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+
+.course-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.course-card:hover {
+    transform: translateY(-5px); 
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.completed {
+    background: rgba(46, 204, 113, 0.2) ;
+    border: 1px solid rgba(46, 204, 113, 0.5) ;
+    box-shadow: 0 0 15px rgba(46, 204, 113, 0.3);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+header {
+    background: steelblue;
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333;
+    margin: 0;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffc300; 
+}
+
+
+#course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+
+#menu {
+    display: block; 
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background: none;
+    border: 0;
+    color: white;
+}
+
+
+#menu::before {
+    content: "≡"; 
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+
+.navigation {
+    display: none; 
+    list-style: none;
+    padding: 0;
+}
+
+
+.navigation.show {
+    display: block;
+}
+
+
+@media (min-width: 600px) {
+    #menu {
+        display: none; 
+    }
+
+    .navigation {
+        display: flex; 
+        justify-content: space-around;
+    }
+}
+
+.filters button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.filters button:hover {
+    background: #ffc300; /* Use your brand gold/yellow for contrast */
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 195, 0, 0.4);
+}
+
+
+
+
+.social a {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+
+.social a:hover {
+    color: #ffc300;
+}
