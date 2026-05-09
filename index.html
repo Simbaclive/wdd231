@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clive | WDD 231 Course Home Page</title>
+    <meta name="description" content="Course home page for Clive, featuring responsive design and dynamic course filtering.">
+    
+    <meta name="author" content="Clive Musika"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+   <header>
+   
+    <img src="images/person.svg" alt="Clive Musika Portfolio Logo" width="50">
+    <span>Clive</span>
+    <button id="menu"></button> 
+</header>
+
+<nav>
+    <ul class="navigation" id="animatenav">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Final</a></li>
+
+        <li><a href="https://github.com/simbaclive" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/clive-musika-203a121a0/" target="_blank">LinkedIn</a></li>
+    </ul>
+</nav>
+
+    <main>
+   
+    <h1>WDD 231 Course Home Page</h1>
+
+   
+    <section class="card">
+        <h2>Web Frontend Development I</h2>
+        <p>This course focuses on building responsive, performant, and accessible web applications using HTML5, CSS3, and modern JavaScript.</p>
+    </section>
+
+    
+    <section class="card">
+        <h2>Course Certification & Tracking</h2>
+        <div class="filters">
+            <button id="all">All</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
+        </div>
+        <div id="course-list"></div>
+        <p>Total Credits: <span id="total-credits"></span></p>
+    </section>
+
+    
+    <section class="card">
+    <h2>Web Standards & Optimization</h2>
+    <p>This project adheres to high-performance web standards, including <strong>Responsive Design</strong> for mobile compatibility, <strong>W3C Validation</strong> for clean code, and <strong>Lighthouse Optimization</strong> to ensure fast load times and accessibility.</p>
+</section>
+        
+</main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Clive Musika | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

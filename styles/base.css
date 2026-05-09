@@ -1,0 +1,52 @@
+
+:root {
+    --primary-blue: #001d3d;
+    --accent-gold: #ffc300;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #001d3d 0%, #003566 100%);
+    background-attachment: fixed;
+    color: var(--white);
+    min-height: 100vh;
+}
+
+header {
+    background: #4682b4; 
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
