@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
+  <!-- Pillars (3) -->
+  <rect x="18" y="28" width="8" height="28" rx="1" fill="#4DA8E0"/>
+  <rect x="30" y="22" width="8" height="34" rx="1" fill="#ffffff"/>
+  <rect x="42" y="28" width="8" height="28" rx="1" fill="#4DA8E0"/>
+  <!-- Base -->
+  <rect x="14" y="55" width="40" height="4" rx="1" fill="#ffffff"/>
+  <!-- Pediment / roofline triangle -->
+  <polygon points="14,28 34,12 54,28" fill="none" stroke="#4DA8E0" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Star at peak -->
+  <polygon points="34,8 35.5,13 40,13 36.5,15.5 38,20 34,17.5 30,20 31.5,15.5 28,13 32.5,13" fill="#D4A017"/>
+  <!-- Wordmark -->
+  <text x="62" y="35" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#ffffff" letter-spacing="1">CHAMBER</text>
+  <text x="62" y="50" font-family="Arial, sans-serif" font-size="8" fill="#4DA8E0" letter-spacing="2">OF COMMERCE</text>
+  <!-- Underline accent -->
+  <line x1="62" y1="55" x2="155" y2="55" stroke="#D4A017" stroke-width="1.5"/>
+</svg>
