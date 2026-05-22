@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Vela Luxury Voyages",
+    "address": "12 Harbour Drive, V&A Waterfront, Cape Town, 8001",
+    "phone": "+27 21 555 0101",
+    "website": "https://example.com/vela",
+    "image": "vela-logo.svg",
+    "membershipLevel": 3,
+    "tagline": "Premium ocean liners and luxury yacht cruises."
+  },
+  {
+    "name": "Kora Herbal Wellness",
+    "address": "34 Bree Street, Gardens, Cape Town, 8001",
+    "phone": "+27 21 555 0202",
+    "website": "https://example.com/kora",
+    "image": "kora-logo.svg",
+    "membershipLevel": 1,
+    "tagline": "Natural herbal remedies for modern living."
+  },
+  {
+    "name": "Noxe AI Infrastructure",
+    "address": "5 Alice Lane, Sandton, Johannesburg, 2196",
+    "phone": "+27 11 555 0303",
+    "website": "https://example.com/noxe",
+    "image": "noxe-logo.svg",
+    "membershipLevel": 3,
+    "tagline": "Next-generation AI infrastructure for enterprises."
+  },
+  {
+    "name": "Solara Clean Energy Co.",
+    "address": "88 Solar Avenue, Centurion, Pretoria, 0157",
+    "phone": "+27 12 555 0404",
+    "website": "https://example.com/solara",
+    "image": "solara-logo.svg",
+    "membershipLevel": 2,
+    "tagline": "Powering South Africa with renewable energy."
+  },
+  {
+    "name": "Miru Visual Studio",
+    "address": "19 Maboneng Precinct, Johannesburg, 2094",
+    "phone": "+27 11 555 0505",
+    "website": "https://example.com/miru",
+    "image": "miru-logo.svg",
+    "membershipLevel": 2,
+    "tagline": "Capturing moments, crafting visual stories."
+  },
+  {
+    "name": "Briq Design + Build",
+    "address": "7 Kloof Street, Gardens, Cape Town, 8008",
+    "phone": "+27 21 555 0606",
+    "website": "https://example.com/briq",
+    "image": "briq-logo.svg",
+    "membershipLevel": 2,
+    "tagline": "Architecture and construction built to last."
+  },
+  {
+    "name": "Fenn Outdoor Gear",
+    "address": "3 Lifestyle Centre, Fourways, Johannesburg, 2055",
+    "phone": "+27 11 555 0707",
+    "website": "https://example.com/fenn",
+    "image": "fenn-logo.svg",
+    "membershipLevel": 1,
+    "tagline": "Gear up for every adventure."
+  },
+  {
+    "name": "Cirq Live Experiences",
+    "address": "42 Fox Street, Ferreirasdorp, Johannesburg, 2001",
+    "phone": "+27 11 555 0808",
+    "website": "https://example.com/cirq",
+    "image": "cirq-logo.svg",
+    "membershipLevel": 3,
+    "tagline": "Unforgettable events and live entertainment."
+  }
+]

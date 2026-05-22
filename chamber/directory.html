@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce | Business Directory</title>
+    <meta name="description" content="Discover and network with top-tier businesses in Gauteng. Support local enterprise through our Chamber Directory.">
+    <meta name="author" content="Clive Musika"> 
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Gauteng Chamber of Commerce Business Directory">
+    <meta property="og:description" content="Explore and support premium local businesses in the Gauteng area.">
+    <meta property="og:image" content="https://simbaclive.github.io/wdd231/chamber/images/og-share.jpg">
+    <meta property="og:url" content="https://simbaclive.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 640px)">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/chamber-logo.svg" alt="Chamber Logo" width="60">
+            <h1>Chamber</h1>
+        </div>
+        <button id="menu" aria-label="Toggle Menu">&#9776;</button> 
+    </header>
+
+    <nav>
+        <ul class="navigation" id="animatenav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Business Directory</h2>
+        
+        <div class="toggle-container">
+            <button id="gridBtn" class="active">Grid View</button>
+            <button id="listBtn">List View</button>
+        </div>
+
+        <article id="member-container" class="grid-mode">
+            </article>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Gauteng Chamber of Commerce</strong></p>
+            <p>100 Rivonia Road, Sandton, South Africa</p>
+            <p>info@gautengchamber.co.za | +27 11 555 0199</p>
+        </div>
+        <div class="footer-meta">
+            <p>&copy; <span id="currentyear"></span> | Clive Musika | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
