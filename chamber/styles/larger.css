@@ -1,7 +1,6 @@
 
 @media (min-width: 640px) {
 
-
     #menu {
         display: none;
     }
@@ -26,13 +25,11 @@
         border-right: none;
     }
 
-
     .grid-mode {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
         padding: 2rem 1rem;
     }
-
 
     .list-mode .member-card {
         flex-direction: row;
@@ -40,7 +37,6 @@
         align-items: center;
         padding: 0.8rem 1.5rem;
     }
-
 
     .list-mode .member-card h3 {
         margin: 0;
@@ -58,21 +54,18 @@
         flex: 1;
         text-align: right;
     }
-
   
     .list-mode .member-card:nth-child(even) {
         background-color: #f1f5f9;
     }
-}
 
-
+  
     .home-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         padding: 2rem 1rem;
     }
-
    
     .hero-panel {
         grid-column: 1 / span 3;
@@ -81,7 +74,6 @@
     .cta-overlay h2 {
         font-size: 2.5rem;
     }
-
     
     .events-card {
         grid-column: 1 / span 1;
@@ -102,3 +94,5 @@
     .spotlight-card {
         flex: 1;
     }
+
+}
