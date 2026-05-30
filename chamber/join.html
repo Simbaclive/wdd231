@@ -45,46 +45,47 @@
         </ul>
     </nav>
 
-    <main class="join-container">
+   <main class="join-container">
         <h1>Membership Application</h1>
 
         <form method="get" action="thankyou.html" class="app-form">
             
-            <label title="Applicant's First Name">
+            <label>
                 <span>First Name *</span>
-                <input type="text" name="firstName" autocomplete="given-name" required>
+                <input type="text" name="firstName" autocomplete="given-name" title="Applicant's First Name" required>
             </label>
 
-            <label title="Applicant's Last Name">
+            <label>
                 <span>Last Name *</span>
-                <input type="text" name="lastName" autocomplete="family-name" required>
+                <input type="text" name="lastName" autocomplete="family-name" title="Applicant's Last Name" required>
             </label>
 
-            <label title="Organizational Title (Minimum 7 alpha characters, hyphens, or spaces)">
+            <label>
                 <span>Organizational Title</span>
                 <input type="text" name="orgTitle" autocomplete="organization-title" 
                        pattern="[A-Za-z\s\-]{7,}" 
+                       title="Organizational Title (Minimum 7 alpha characters, hyphens, or spaces)" 
                        placeholder="e.g., Managing-Director">
             </label>
 
-            <label title="Applicant's Email Address">
+            <label>
                 <span>Email Address *</span>
-                <input type="email" name="email" autocomplete="email" required placeholder="name@domain.com">
+                <input type="email" name="email" autocomplete="email" title="Applicant's Email Address" required placeholder="name@domain.com">
             </label>
 
-            <label title="Mobile Phone Number">
+            <label>
                 <span>Mobile Phone *</span>
-                <input type="tel" name="phone" autocomplete="tel" required>
+                <input type="tel" name="phone" autocomplete="tel" title="Mobile Phone Number" required>
             </label>
 
-            <label title="Business/Organization Name">
+            <label>
                 <span>Organization Name *</span>
-                <input type="text" name="organization" autocomplete="organization" required>
+                <input type="text" name="organization" autocomplete="organization" title="Business or Organization Name" required>
             </label>
 
-            <label title="Membership Tier Selection">
+            <label>
                 <span>Membership Level *</span>
-                <select name="membershipLevel" required>
+                <select name="membershipLevel" title="Membership Tier Selection" required>
                     <option value="" disabled selected>Select a membership tier...</option>
                     <option value="np">NP Membership (Non-Profit - Free)</option>
                     <option value="bronze">Bronze Membership</option>
@@ -93,9 +94,9 @@
                 </select>
             </label>
 
-            <label title="Business Description Summary">
+            <label>
                 <span>Organization Description</span>
-                <textarea name="description" rows="4" placeholder="Tell us briefly about your organization..."></textarea>
+                <textarea name="description" rows="4" title="Business Description Summary" placeholder="Tell us briefly about your organization..."></textarea>
             </label>
 
             <input type="hidden" name="formTimestamp" id="formTimestamp">
