@@ -594,7 +594,7 @@ footer p {
 .discover-grid {
     display: grid;
     gap: 1.5rem;
-    /* Explicitly mapping structural areas chronologically on mobile views */
+   
     grid-template-areas:
         "item1" "item2" "item3" "item4"
         "item5" "item6" "item7" "item8";
