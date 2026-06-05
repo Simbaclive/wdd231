@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauteng Chamber - Join Membership</title>
+    <meta name="description" content="Apply for a membership position with the Gauteng Chamber of Commerce. Select a tier tailored to accelerate your business growth.">
+    <meta name="author" content="Clive Musika">
+    
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Gauteng Chamber - Join Membership">
+    <meta property="og:description" content="Apply for a membership position with the Gauteng Chamber of Commerce today.">
+    <meta property="og:image" content="https://simbaclive.github.io/wdd231/chamber/images/chamber-logo.png">
+    <meta property="og:url" content="https://simbaclive.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script> 
+    <script src="scripts/join.js" defer></script> 
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/chamber-logo.svg" alt="Gauteng Chamber Logo" width="60">
+            <h2>Gauteng Chamber</h2>
+        </div>
+        <button id="menu" aria-label="Toggle Menu">&#9776;</button> 
+    </header>
+
+    <nav>
+        <ul class="navigation" id="animatenav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main class="join-container">
+        <h1>Membership Application</h1>
+
+        <form method="get" action="thankyou.html" class="app-form">
+            
+            <label title="Applicant's First Name">
+                <span>First Name *</span>
+                <input type="text" name="firstName" autocomplete="given-name" required>
+            </label>
+
+            <label title="Applicant's Last Name">
+                <span>Last Name *</span>
+                <input type="text" name="lastName" autocomplete="family-name" required>
+            </label>
+
+            <label title="Organizational Title (Minimum 7 alpha characters, hyphens, or spaces)">
+                <span>Organizational Title</span>
+                <input type="text" name="orgTitle" autocomplete="organization-title" 
+                       pattern="[A-Za-z\s\-]{7,}" 
+                       placeholder="e.g., Managing-Director">
+            </label>
+
+            <label title="Applicant's Email Address">
+                <span>Email Address *</span>
+                <input type="email" name="email" autocomplete="email" required placeholder="name@domain.com">
+            </label>
+
+            <label title="Mobile Phone Number">
+                <span>Mobile Phone *</span>
+                <input type="tel" name="phone" autocomplete="tel" required>
+            </label>
+
+            <label title="Business/Organization Name">
+                <span>Organization Name *</span>
+                <input type="text" name="organization" autocomplete="organization" required>
+            </label>
+
+            <label title="Membership Tier Selection">
+                <span>Membership Level *</span>
+                <select name="membershipLevel" required>
+                    <option value="" disabled selected>Select a membership tier...</option>
+                    <option value="np">NP Membership (Non-Profit - Free)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label title="Business Description Summary">
+                <span>Organization Description</span>
+                <textarea name="description" rows="4" placeholder="Tell us briefly about your organization..."></textarea>
+            </label>
+
+            <input type="hidden" name="formTimestamp" id="formTimestamp">
+
+            <input type="submit" value="Submit Application" class="submit-btn">
+        </form>
+
+        <aside class="tier-deck">
+            <h2>Our Membership Tiers</h2>
+            
+            <div class="tier-card level-np">
+                <h3>Non-Profit (NP)</h3>
+                <p>Designed for registered NGO and non-profit initiatives.</p>
+                <button type="button" class="modal-trigger" data-target="modal-np">View Benefits &rarr;</button>
+            </div>
+
+            <div class="tier-card level-brz">
+                <h3>Bronze Tier</h3>
+                <p>Perfect for growing startups and local business entities.</p>
+                <button type="button" class="modal-trigger" data-target="modal-bronze">View Benefits &rarr;</button>
+            </div>
+
+            <div class="tier-card level-slv">
+                <h3>Silver Tier</h3>
+                <p>Includes expanded access to professional networking mixers.</p>
+                <button type="button" class="modal-trigger" data-target="modal-silver">View Benefits &rarr;</button>
+            </div>
+
+            <div class="tier-card level-gld">
+                <h3>Gold Tier</h3>
+                <p>Premium options with top-row homepage spotlight positions.</p>
+                <button type="button" class="modal-trigger" data-target="modal-gold">View Benefits &rarr;</button>
+            </div>
+        </aside>
+    </main>
+
+    <dialog id="modal-np" class="benefit-modal">
+        <div class="modal-content">
+            <h3>NP Tier Benefits</h3>
+            <p><strong>Cost:</strong> Free (Requires Proof of registration)</p>
+            <ul>
+                <li>Standard Directory Business Listing</li>
+                <li>Access to Public SME Workshops</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="modal-bronze" class="benefit-modal">
+        <div class="modal-content">
+            <h3>Bronze Tier Benefits</h3>
+            <p><strong>Cost:</strong> R2,500 / annum</p>
+            <ul>
+                <li>Standard Directory Business Listing</li>
+                <li>Access to Monthly B2B Mixers</li>
+                <li>Quarterly Training Seminars</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="modal-silver" class="benefit-modal">
+        <div class="modal-content">
+            <h3>Silver Tier Benefits</h3>
+            <p><strong>Cost:</strong> R7,500 / annum</p>
+            <ul>
+                <li>Highlighted Directory Listing Priority</li>
+                <li>2 Event Admission Passes per Summit</li>
+                <li>Standard 14-day Home Page Spotlight Position</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </div>
+    </dialog>
+
+    <dialog id="modal-gold" class="benefit-modal">
+        <div class="modal-content">
+            <h3>Gold Tier Benefits</h3>
+            <p><strong>Cost:</strong> R15,000 / annum</p>
+            <ul>
+                <li>Premium Top-Row Directory Pinning</li>
+                <li>Unlimited Access to Tech Innovation Summits</li>
+                <li>Permanent Alternating Homepage Spotlight Placements</li>
+                <li>Dedicated Executive Board Advisory Access</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </div>
+    </dialog>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Chamber of Commerce | Clive Musika | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

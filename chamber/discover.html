@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauteng Chamber - Discover Area</title>
+    <meta name="description" content="Explore regional highlights, economic demographics, and landmarks across Gauteng, South Africa.">
+    <meta name="author" content="Clive Musika">
+    
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Gauteng Chamber - Discover Area">
+    <meta property="og:description" content="Explore landmarks and regional attractions across Gauteng.">
+    <meta property="og:image" content="https://simbaclive.github.io/wdd231/chamber/images/chamber-logo.png">
+    <meta property="og:url" content="https://simbaclive.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script> 
+    <script src="scripts/discover.js" type="module" defer></script> 
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/chamber-logo.svg" alt="Gauteng Chamber Logo" width="60">
+            <h2>Gauteng Chamber</h2>
+        </div>
+        <button id="menu" aria-label="Toggle Navigation Options">&#9776;</button> 
+    </header>
+
+    <nav>
+        <ul class="navigation" id="animatenav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="visit-message-banner" class="visit-banner">
+            <p id="visit-message"></p>
+        </div>
+
+        <h1>Discover Gauteng</h1>
+        
+        <div class="discover-grid" id="discoverGridContainer">
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Gauteng Chamber of Commerce | Clive Musika | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

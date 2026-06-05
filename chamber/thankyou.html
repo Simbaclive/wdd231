@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauteng Chamber - Submission Received</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/directory.js" defer></script> 
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/chamber-logo.svg" alt="Gauteng Chamber Logo" width="60">
+            <h2>Gauteng Chamber</h2>
+        </div>
+        <button id="menu" aria-label="Toggle Menu">&#9776;</button> 
+    </header>
+
+    <nav>
+        <ul class="navigation" id="animatenav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main style="max-width: 800px; margin: 2rem auto; padding: 1rem;">
+        <div style="background: white; padding: 2.5rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 5px solid #ffbf00;">
+            <h1 style="color: #0b2240; margin-top: 0;">Application Submitted Successfully!</h1>
+            <p>Thank you for applying to join the Gauteng Chamber of Commerce. We have logged your application data and our executive review panel will touch base within 48 business hours.</p>
+            
+            <hr style="border: 0; height: 1px; background: #cbd5e1; margin: 2rem 0;">
+            
+            <h3 style="color: #16325c;">Logged Record Profile Summary</h3>
+            <div id="dataSummaryDeck" style="display: flex; flex-direction: column; gap: 0.8rem; line-height: 1.6; margin-top: 1rem;">
+                </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const container = document.getElementById("dataSummaryDeck");
+            const queryParams = new URLSearchParams(window.location.search);
+
+            // Mapping for target user records extraction parameters
+            const targets = [
+                { label: "Applicant Name", value: `${queryParams.get("firstName") || ""} ${queryParams.get("lastName") || ""}` },
+                { label: "Registered Email", key: "email" },
+                { label: "Contact Phone", key: "phone" },
+                { label: "Organization Title", key: "organization" },
+                { label: "Submission Timestamp", key: "formTimestamp" }
+            ];
+
+            targets.forEach(item => {
+                const textValue = item.key ? queryParams.get(item.key) : item.value;
+                if (textValue && textValue.trim() !== "") {
+                    const row = document.createElement("p");
+                    row.innerHTML = `<strong>${item.label}:</strong> ${decodeURIComponent(textValue)}`;
+                    container.appendChild(row);
+                }
+            });
+        });
+    </script>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Gauteng Chamber of Commerce | Clive Musika | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
