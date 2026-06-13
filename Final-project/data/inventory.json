@@ -1,0 +1,152 @@
+[
+  {
+    "id": "prod-01",
+    "name": "Classic Chocolate Chip Cookie",
+    "category": "Cookies",
+    "price": 3.50,
+    "dietary": ["vegetarian"],
+    "allergens": ["Gluten", "Dairy", "Eggs"],
+    "image": "images/cookie1.jpg",
+    "description": "Thick and chewy bakery-style cookie loaded with premium semi-sweet dark chocolate chunks."
+  },
+  {
+    "id": "prod-02",
+    "name": "Artisan Pastry Selection",
+    "category": "Pastries",
+    "price": 5.25,
+    "dietary": ["vegetarian"],
+    "allergens": ["Gluten", "Dairy"],
+    "image": "images/sweet3.jpg",
+    "description": "Flaky, golden, hand-laminated puff pastry layer drizzled with a light sweet sugar glaze."
+  },
+  {
+    "id": "prod-03",
+    "name": "Traditional Sourdough Loaf",
+    "category": "Breads",
+    "price": 8.00,
+    "dietary": ["vegan"],
+    "allergens": ["Gluten"],
+    "image": "images/baking-from-home.jpeg",
+    "description": "Naturally leavened wild yeast loaf with a crisp blistered crust and a soft, open crumb interior."
+  },
+  {
+    "id": "prod-04",
+    "name": "Fresh Bakery Croissant",
+    "category": "Pastries",
+    "price": 4.50,
+    "dietary": ["vegetarian"],
+    "allergens": ["Gluten", "Dairy", "Eggs"],
+    "image": "images/menu.jpeg",
+    "description": "Buttery, multi-layered French croissant baked fresh every single morning."
+  },
+  {
+    "id": "prod-05",
+    "name": "Gluten-Free Cinnamon Roll Cake",
+    "category": "Cakes",
+    "price": 6.50,
+    "dietary": ["gluten-free", "vegetarian"],
+    "allergens": ["Dairy", "Eggs"],
+    "image": "images/gluten-free-cinnamon-roll-cake.jpg",
+    "description": "Soft cinnamon-swirled cake topped with a rich vanilla bean cream cheese glaze, entirely gluten-free."
+  },
+  {
+    "id": "prod-06",
+    "name": "Easy Vegan Blueberry Cake",
+    "category": "Cakes",
+    "price": 5.75,
+    "dietary": ["vegan"],
+    "allergens": ["Gluten"],
+    "image": "images/easy-vegan-blueberry-cake-recipe.jpg",
+    "description": "Moist, plant-based sponge cake bursting with organic wild blueberries and a dusting of powdered sugar."
+  },
+  {
+    "id": "prod-07",
+    "name": "Gluten-Free Strawberry Muffins",
+    "category": "Pastries",
+    "price": 4.00,
+    "dietary": ["gluten-free", "vegetarian"],
+    "allergens": ["Eggs"],
+    "image": "images/gluttenfreestrawberrymuffins2.jpg",
+    "description": "Fluffy, morning-baked rice-flour muffins packed with sweet, ripe local strawberries."
+  },
+  {
+    "id": "prod-08",
+    "name": "Premium Vegan Chocolate Tart",
+    "category": "Desserts",
+    "price": 6.00,
+    "dietary": ["vegan", "gluten-free"],
+    "allergens": ["Nuts"],
+    "image": "images/vegan-desserts.jpg",
+    "description": "Silky dark chocolate ganache set in an almond-flour pressed crust, 100% plant-based."
+  },
+  {
+    "id": "prod-09",
+    "name": "Double Chocolate Cookie",
+    "category": "Cookies",
+    "price": 3.50,
+    "dietary": ["vegetarian"],
+    "allergens": ["Gluten", "Dairy"],
+    "image": "images/cookie1.jpg",
+    "description": "Rich cocoa dough loaded with white chocolate chips and premium chunks."
+  },
+  {
+    "id": "prod-10",
+    "name": "Almond Danish Pastry",
+    "category": "Pastries",
+    "price": 5.00,
+    "dietary": ["vegetarian"],
+    "allergens": ["Gluten", "Dairy", "Nuts"],
+    "image": "images/sweet3.jpg",
+    "description": "Crisp flaky pastry filled with sweet almond frangipane paste and toasted flaked almonds."
+  },
+  {
+    "id": "prod-11",
+    "name": "Vegan Blueberry Scone",
+    "category": "Pastries",
+    "price": 4.25,
+    "dietary": ["vegan"],
+    "allergens": ["Gluten"],
+    "image": "images/easy-vegan-blueberry-cake-recipe.jpg",
+    "description": "Crumbly house scone made with coconut oil, fresh blueberries, and raw cane sugar."
+  },
+  {
+    "id": "prod-12",
+    "name": "Gluten-Free Cinnamon Swirl",
+    "category": "Pastries",
+    "price": 4.75,
+    "dietary": ["gluten-free", "vegetarian"],
+    "allergens": ["Dairy"],
+    "image": "images/gluten-free-cinnamon-roll-cake.jpg",
+    "description": "Warm, delicate brown sugar cinnamon twists using a gluten-free flour blend."
+  },
+  {
+    "id": "prod-13",
+    "name": "Rustic Harvest Wheat Bread",
+    "category": "Breads",
+    "price": 7.50,
+    "dietary": ["vegan"],
+    "allergens": ["Gluten"],
+    "image": "images/baking-from-home.jpeg",
+    "description": "Hearty stone-ground whole wheat loaf baked crusty on a hearth floor."
+  },
+  {
+    "id": "prod-14",
+    "name": "Vegan Vanilla Cake Slice",
+    "category": "Cakes",
+    "price": 5.50,
+    "dietary": ["vegan"],
+    "allergens": ["Gluten"],
+    "image": "images/vegan-desserts.jpg",
+    "description": "Fluffy vanilla sponge layered with house-made dairy-free vegetable buttercream."
+  },
+  {
+    "id": "prod-15",
+    "name": "Gluten-Free Triple Berry Cupcake",
+    "category": "Cakes",
+    "price": 4.50,
+    "dietary": ["gluten-free", "vegetarian"],
+    "allergens": ["Eggs", "Dairy"],
+    "image": "images/gluttenfreestrawberrymuffins2.jpg",
+    "description": "Delicate gluten-free cupcake core filled with real raspberry, blackberry, and strawberry compote."
+  }
+]
