@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+    --primary-espresso: #2B1E17;
+    --accent-honey: #D99B26;
+    --bg-cream: #FAF6F0;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--primary-espresso);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 6px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    border-top: 4px solid var(--primary-espresso);
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--primary-espresso);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-espresso);
+    color: #C5B3A6;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+footer a {
+    color: var(--accent-honey);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+form {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+    border-top: 4px solid var(--primary-espresso);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #EAE1D4;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--primary-espresso);
+}
+
+button[type="submit"] {
+    background-color: var(--accent-honey);
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--primary-espresso);
+}
