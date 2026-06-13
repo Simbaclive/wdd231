@@ -6,14 +6,25 @@
     <title>Catering Order Requests | Crumb & Crust</title>
     <meta name="description" content="Organizing a workshop or morning meeting? Fill out our customization form to submit a catering request.">
     <meta name="author" content="Clive Simbarashe Musika">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-     <link rel="stylesheet" href="styles/base.css">
+    
+    <meta property="og:title" content="Catering Order Requests | Crumb & Crust">
+    <meta property="og:description" content="Organizing a workshop or morning meeting? Complete our custom planning sheet to register an event slot.">
+    <meta property="og:image" content="https://simbaclive.github.io/wdd231/Final-project/images/main-image.jpg">
+    <meta property="og:url" content="https://simbaclive.github.io/wdd231/Final-project/order.html">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 767px)">
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
 </head>
 <body>
     <header>
-        <h1>Crumb & Crust</h1>
+        <div class="logo-area">Crumb & Crust</div>
         <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
         <nav>
             <ul>
@@ -25,29 +36,41 @@
     </header>
 
     <main>
-        <h2 style="color: var(--accent-honey); margin-bottom: 1.5rem; text-align: center;">Catering Pre-Order Customization</h2>
-        <form action="thank-you.html" method="GET">
+        <h1>Catering Order Requests</h1>
+        <h2 class="page-subtitle">Custom Event Planning Selection</h2>
+        
+        <form id="catering-form" action="thank-you.html" method="get">
             <div class="form-group">
-                <label for="name">Contact Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Clive Musika">
+                <label for="client-name">Full Name:</label>
+                <input type="text" id="client-name" name="clientName" required placeholder="John Doe">
             </div>
+
+            <div class="form-group">
+                <label for="client-email">Email Address:</label>
+                <input type="email" id="client-email" name="clientEmail" required placeholder="name@example.com">
+            </div>
+
             <div class="form-group">
                 <label for="event-date">Event Date:</label>
                 <input type="date" id="event-date" name="eventDate" required>
             </div>
+
             <div class="form-group">
-                <label for="package">Select Assembly Tier:</label>
-                <select id="package" name="package" required>
-                    <option value="">--Choose a Platter Option--</option>
-                    <option value="assorted-pastries">Morning Assorted Pastries Trio</option>
-                    <option value="sourdough-charcuterie">Artisan Bread & Savory Pairing</option>
+                <label for="package-select">Catering Package Selection:</label>
+                <select id="package-select" name="packageSelection" required>
+                    <option value="" disabled selected>-- Select an option --</option>
+                    <option value="breakfast">Morning Pastry Board Assortment</option>
+                    <option value="sourdough">Artisan Bread & Spreads Platter</option>
+                    <option value="dessert">Sweet Treat Celebration Platter</option>
                 </select>
             </div>
+
             <div class="form-group">
-                <label for="notes">Special Requirements / Dietary Adjustments:</label>
-                <textarea id="notes" name="notes" rows="4" placeholder="Any allergy considerations or adjustments..."></textarea>
+                <label for="special-notes">Dietary Accommodations & Notes:</label>
+                <textarea id="special-notes" name="specialNotes" rows="4" placeholder="List any specific allergen rules or custom adjustments here..."></textarea>
             </div>
-            <button type="submit">Submit Request</button>
+
+            <button type="submit" class="submit-btn">Submit Catering Request</button>
         </form>
     </main>
 
@@ -56,6 +79,6 @@
         <p><a href="https://loom.com/your-video-link" target="_blank">Project Video Demo</a></p>
     </footer>
 
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
 </body>
 </html>
